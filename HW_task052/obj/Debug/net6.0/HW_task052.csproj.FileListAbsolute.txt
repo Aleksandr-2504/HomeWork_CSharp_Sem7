@@ -1,0 +1,5 @@
+C:\Users\plesh\Desktop\Обучение по программе РАЗРАБОТЧИК\3_Знакомство с языками программирования\CSharp\HomeWork\HW_Seminar7\HW_task052\obj\Debug\net6.0\HW_task052.csproj.AssemblyReference.cache
+C:\Users\plesh\Desktop\Обучение по программе РАЗРАБОТЧИК\3_Знакомство с языками программирования\CSharp\HomeWork\HW_Seminar7\HW_task052\obj\Debug\net6.0\HW_task052.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\plesh\Desktop\Обучение по программе РАЗРАБОТЧИК\3_Знакомство с языками программирования\CSharp\HomeWork\HW_Seminar7\HW_task052\obj\Debug\net6.0\HW_task052.AssemblyInfoInputs.cache
+C:\Users\plesh\Desktop\Обучение по программе РАЗРАБОТЧИК\3_Знакомство с языками программирования\CSharp\HomeWork\HW_Seminar7\HW_task052\obj\Debug\net6.0\HW_task052.AssemblyInfo.cs
+C:\Users\plesh\Desktop\Обучение по программе РАЗРАБОТЧИК\3_Знакомство с языками программирования\CSharp\HomeWork\HW_Seminar7\HW_task052\obj\Debug\net6.0\HW_task052.csproj.CoreCompileInputs.cache
