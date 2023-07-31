@@ -1,0 +1,3 @@
+Ссылка на репозиторий с ДЗ по семинару 7: 
+
+https://github.com/Aleksandr-2504/HomeWork_CSharp_Sem7.git

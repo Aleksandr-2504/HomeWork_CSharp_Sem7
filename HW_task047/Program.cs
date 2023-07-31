@@ -1,4 +1,7 @@
-﻿/*
+﻿using System;
+using static System.Console;
+
+/*
 Задача 47. Задайте двумерный массив размером m×n, заполненный случайными 
            вещественными числами.
 
@@ -28,19 +31,19 @@ void PrintTwoDimenArr(double[,] arrayPrint)
   {
     for (int n = 0; n < arrayPrint.GetLength(1); n++)
     {
-      Console.Write($"{arrayPrint[m, n]:f1} ");
+      Write($"{arrayPrint[m, n]:f1} ");
     }
-    Console.WriteLine();
+    WriteLine();
   }
 }
 
 
-Console.Clear();
+Clear();
 int i = 3;
 int j = 4;
 double minarr = -5.5;
 double maxarr = 10.5;
-Console.WriteLine($"m = {i}, n = {j}.");
-Console.WriteLine();
+WriteLine($"m = {i}, n = {j}.");
+WriteLine();
 PrintTwoDimenArr(TwoDimenArr(i, j, minarr, maxarr));
-Console.WriteLine();
+WriteLine();

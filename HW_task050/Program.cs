@@ -1,4 +1,7 @@
-﻿/*
+﻿using System;
+using static SystemAcl.Console;
+
+/*
 Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, 
            и возвращает значение этого элемента или же указание, что такого элемента нет.
 
@@ -21,7 +24,6 @@ int[,] TwoIntArr(int m, int n)
   }
   return arr;
 }
-
 void PrintTwoIntArr(int[,] arrayPrint)
 {
   for (int m = 0; m < arrayPrint.GetLength(0); m++)
@@ -33,37 +35,19 @@ void PrintTwoIntArr(int[,] arrayPrint)
     Console.WriteLine();
   }
 }
-
-
-int[] ElementValue(int[,] arrEl, int i, int j)
+bool ElementValue(int[,] arrEl, int i, int j)
 {
-  int[] arr2 = new int[4];
-  int[,] arrEl2 = new int[arrEl.GetLength(0), arrEl.GetLength(1)];
-  for (int m = 0; m < arrEl2.GetLength(0); m++)
+  for (int m = 0; m < arrEl.GetLength(0); m++)
   {
-    if (i == m)
+    for (int n = 0; n < arrEl.GetLength(1); n++)
     {
-      for (int n = 0; n < arrEl2.GetLength(1); n++)
-      {
-        if (j == n)
-        {
-          arr2[0] = arrEl[i, j];
-          arr2[1] = i;
-          arr2[2] = j;
-          arr2[3] = 0;
-        }
-      }
-    }
-    else
-    {
-      arr2[0] = 0;
-      arr2[1] = i;
-      arr2[2] = j;
-      arr2[3] = -1;
+      if (m == i && n == j)
+        return true;
     }
   }
-  return arr2;
+  return false;
 }
+
 
 Console.Clear();
 Console.Write("Введите количество строк (i) двумерного массива: ");
@@ -78,23 +62,12 @@ int l = int.Parse(Console.ReadLine());
 int[,] array = TwoIntArr(i, j);
 PrintTwoIntArr(array);
 Console.WriteLine();
-
-int[] arr3 = ElementValue(array, k, l);
-
-if (arr3[3] != -1)
+if (ElementValue(array, k, l))
 {
-  Console.Write($"{arr3[1]} и {arr3[2]} -> {arr3[0]}");
+  Console.Write($"{k} и {l} -> {array[k, l]}");
 }
 else
 {
   Console.Write($"{k} и {l} -> такого числа, с такими индексами, в массиве нет");
 }
 
-
-//int[,] array = TwoIntArr(i, j);
-/*
-if (ElementValue(array, k, l) == false)
-  Console.WriteLine($"{k}{l} -> {array[k, l]}");
-else
-  Console.WriteLine($"{k}{l} -> такого числа, с такими индексами, в массиве нет");
-*/
